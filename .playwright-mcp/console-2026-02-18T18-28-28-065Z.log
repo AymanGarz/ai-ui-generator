@@ -1,0 +1,706 @@
+[     629ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[    1060ms] Error: ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file://C:\Users\ayman\Desktop\Claude Code\uigen\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:725:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\ayman\Desktop\Claude Code\uigen\node_modules\next\dist\server\lib\dev-bundler-service.js:39:55)
+    at DevServer.getCompilationError (file://C:\Users\ayman\Desktop\Claude Code\uigen\node_modules\next\dist\server\dev\next-dev-server.js:643:42)
+    at DevServer.findPageComponents (file://C:\Users\ayman\Desktop\Claude Code\uigen\node_modules\next\dist\server\dev\next-dev-server.js:613:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\ayman\Desktop\Claude Code\uigen\node_modules\next\dist\server\base-server.js:2619:26)
+[    1058ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1058ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1059ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1059ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1269ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1269ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1269ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1270ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1511ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1511ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1512ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1512ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1683ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1683ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1683ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    1683ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    2035ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/favicon.ico:0
+[    8729ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    8730ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    8730ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[    8730ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   11313ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   11313ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   11314ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   11314ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   12432ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   12432ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   12432ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   12433ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   13116ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   13117ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   13117ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   13117ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   13433ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   13433ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   13434ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   13434ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   14491ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   14491ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   14492ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   14492ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   18221ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   18221ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   18221ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   18221ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   21136ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   21136ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   21136ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   21136ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   22984ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   22985ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   22985ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   22985ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23028ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23029ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23029ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23029ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23194ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23195ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23195ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23195ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23345ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23345ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23345ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23346ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23527ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23527ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23528ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23528ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23745ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23747ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23747ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   23747ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   24352ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/array.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { setResponseValueAndErrors } from "../errorMessages.js";
+  3 | import { parseDef } from "../parseDef.js";
+  4 | export function parseArrayDef(def, refs) {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   24352ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/object.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodOptional } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | export function parseObjectDef(def, refs) {
+  4 |     const forceOptionalIntoNullable = refs.target === "openAi";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   24352ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/parsers/record.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind, } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseDef } from "../parseDef.js";
+  3 | import { parseStringDef } from "./string.js";
+  4 | import { parseBrandedDef } from "./branded.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
+[   24353ms] [ERROR] ./node_modules/zod-to-json-schema/dist/esm/selectParser.js:1:1
+Module not found: Can't resolve 'zod'
+> 1 | import { ZodFirstPartyTypeKind } from "zod";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { parseAnyDef } from "./parsers/any.js";
+  3 | import { parseArrayDef } from "./parsers/array.js";
+  4 | import { parseBigintDef } from "./parsers/bigint.js";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:11193
