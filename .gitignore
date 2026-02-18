@@ -50,3 +50,5 @@ next-env.d.ts
 /prisma/dev.db
 /prisma/dev.db-journal
 .firecrawl/
+.playwright-mcp/
+NUL
