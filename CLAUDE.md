@@ -38,13 +38,15 @@ UIGen is an AI-powered React component generator with live preview. Users descri
 
 - **JSX Transformer** (`src/lib/transform/jsx-transformer.ts`) — Client-side Babel transformation that converts JSX/TSX to browser-runnable JS. Creates blob URLs for each file and builds an import map. Third-party imports resolve to `esm.sh`. Handles `@/` path aliases.
 
-- **Provider** (`src/lib/provider.ts`) — Supports Anthropic (`ANTHROPIC_API_KEY`) with model `claude-opus-4-6`, or a `MockLanguageModel` fallback.
+- **Provider** (`src/lib/provider.ts`) — Supports Anthropic (`ANTHROPIC_API_KEY`) with model `claude-haiku-4-5`, or a `MockLanguageModel` fallback.
+
+- **Generation Prompt** (`src/lib/prompts/generation.tsx`) — System prompt sent to Claude for component generation. Contains both functional rules (virtual FS, entrypoint, imports) and a visual styling philosophy to produce distinctive, non-generic UI.
 
 ### Context Providers
 
 The app is wrapped in two nested React contexts (in `src/app/main-content.tsx`):
 - `FileSystemProvider` — manages the virtual file system state, handles tool call side effects
-- `ChatProvider` — wraps Vercel AI SDK's `useChat` with `DefaultChatTransport` (dynamic `body` function for current FS state), manages input state locally, uses `sendMessage` for submissions
+- `ChatProvider` — wraps Vercel AI SDK's `useChat` with a `body` function for current FS state, exposes `handleSubmit`/`input`/`handleInputChange`/`messages`/`status`
 
 ### Routing & Auth
 
@@ -79,10 +81,10 @@ SQLite via Prisma. Two models: `User` and `Project`. Projects store serialized m
 
 - **Run `npm run setup` before `npm run dev`** — The Prisma client (`@/generated/prisma`) is not checked into the repo. Running `npm run dev` without generating it first will fail with "Module not found".
 - **Use `--legacy-peer-deps` for dependency installs** — There are peer dependency conflicts between `ai`, `@ai-sdk/react`, and `zod`. Plain `npm install` may fail with ERESOLVE errors.
-- **AI SDK v6 API** — `useChat` from `@ai-sdk/react@3.x` does NOT return `handleSubmit`/`input`/`setInput`/`handleInputChange`. It returns `sendMessage`/`messages`/`status`. Input state must be managed manually. The server must use `toUIMessageStreamResponse()` (not `toDataStreamResponse()`), and messages are `UIMessage` (with `parts`), not the old `Message` (with `content`).
-- **Provider model spec** — `ai@6.x` requires `LanguageModelV2` (spec version `"v2"`). Old v1 providers will throw `AI_UnsupportedModelVersionError`. Mock providers must implement the v2 interface.
-- **AI SDK v6 `tool()` uses `inputSchema`, NOT `parameters`** — `tool()` is an identity function. `prepareToolsAndToolChoice` reads `tool.inputSchema`. Using the old v5 key `parameters` silently produces empty schemas (`properties: {}`) sent to the API. Always use `inputSchema`.
-- **`streamText` API renames** — `maxSteps` is removed; use `stopWhen: stepCountIs(N)` (import from `"ai"`). `maxTokens` is removed; use `maxOutputTokens`.
+- **AI SDK v4 API (`ai@4.3.16`)** — `useChat` from `@ai-sdk/react` returns `handleSubmit`/`input`/`handleInputChange`/`messages`/`status`. The server uses `toDataStreamResponse()`, and messages are `Message` (with `content`/`role`/`toolInvocations`).
+- **Provider model spec** — `ai@4.x` uses `LanguageModelV1` (spec version `"v1"`). Mock providers must implement the v1 interface (see `@ai-sdk/provider`).
+- **AI SDK v4 `tool()` uses `parameters` (Zod schema), NOT `inputSchema`** — `tool()` is an identity function. `prepareToolsAndToolChoice` converts Zod schemas via `asSchema().jsonSchema`. Both tools (`str_replace_editor`, `file_manager`) must use the `tool()` wrapper from `ai` with a `description` and `parameters`. Plain objects without `tool()` won't serialize properly for the Anthropic API.
+- **Keep Zod on v3** — `ai@4.x` and `zod-to-json-schema@3.24.x` only support Zod v3. Using Zod v4 breaks tool schema conversion (`z.object()` serializes as `{type: "string"}` instead of `{type: "object"}`), causing Anthropic API errors like `tools.0.custom.input_schema.type: Input should be 'object'`. Current: `zod@^3.25.76`.
 - **Anthropic prompt caching** — The system prompt in `POST /api/chat` uses `providerOptions: { anthropic: { cacheControl: { type: "ephemeral" } } }` to enable Anthropic's prompt caching. This reduces latency and cost for the system prompt across multi-turn conversations. See `src/app/api/chat/route.ts`.
 - **Anthropic model naming** — Model is set in `src/lib/provider.ts` as `claude-haiku-4-5`. The `@ai-sdk/anthropic` provider uses `anthropic("claude-haiku-4-5")` — no custom configuration or fetch wrappers needed.
 - **`ANTHROPIC_API_KEY` env var** — Set in `.env`. When missing or empty, the app falls back to `MockLanguageModel` which returns canned responses. The mock implements `LanguageModelV1` from `@ai-sdk/provider`.
